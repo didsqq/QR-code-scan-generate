@@ -31,9 +31,12 @@ export const QrCodeGenerator = () => {
             </button>
 
             {result !== '' && (
+                <>
+                {console.log('QR-код для:', result)}
                 <div className={s.qrWrapper}>
                     <QRCodeSVG value={result} size={200} />
                 </div> 
+                </>
             )}
         </div>
     );
